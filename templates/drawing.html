@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="drawing-container">
+    <h2>Virtual Drawing Application</h2>
+    
+    <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Click the button below to launch the drawing application</li>
+            <li>Use your hand gestures to draw in the OpenCV window</li>
+            <li>Color selection buttons appear at the top of the drawing window</li>
+            <li>Press 'S' to save your drawing or 'Q' to exit without saving</li>
+        </ol>
+    </div>
+    
+    <div class="launch-btn-container">
+        <a href="{{ url_for('run_drawing_app') }}" class="btn btn-launch">
+            Launch Drawing Application
+        </a>
+        <a href="{{ url_for('desktop') }}" class="btn btn-back">
+            Back to Desktop
+        </a>
+    </div>
+    
+    <div class="preview">
+        <h3>Application Preview:</h3>
+        <img src="{{ url_for('static', filename='drawing_preview.png') }}" 
+             alt="Drawing application preview">
+    </div>
+</div>
+{% endblock %}

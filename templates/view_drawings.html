@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="drawings-container">
+    <h2>Your Saved Drawings</h2>
+    {% if drawings %}
+        <div class="drawings-grid">
+            {% for drawing in drawings %}
+                <div class="drawing-item">
+                    <img src="{{ url_for('static', filename='drawings/' + drawing['filename']) }}" 
+                         alt="Drawing {{ drawing['id'] }}">
+                    <div class="drawing-info">
+                        <span class="date">{{ drawing['created_at'] }}</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>You haven't saved any drawings yet.</p>
+    {% endif %}
+    <a href="{{ url_for('desktop') }}" class="back-btn">Back to Desktop</a>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="desktop">
+    <h2>Welcome to Your Virtual Desktop</h2>
+    <div class="options">
+        <a href="{{ url_for('drawing') }}" class="option-btn">
+            <div class="icon">🎨</div>
+            <div class="label">Start Drawing</div>
+        </a>
+        <a href="{{ url_for('view_drawings') }}" class="option-btn">
+            <div class="icon">🖼️</div>
+            <div class="label">View Drawings</div>
+        </a>
+    </div>
+</div>
+{% endblock %}

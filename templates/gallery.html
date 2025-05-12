@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Your Drawings</title>
+</head>
+<body>
+  <h2>Your Saved Drawings</h2>
+  <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+  <hr>
+  {% for drawing in drawings %}
+    <div>
+      <img src="{{ url_for('static', filename='saved_drawings/' + drawing) }}" width="300" alt="{{ drawing }}">
+    </div>
+  {% else %}
+    <p>No drawings found.</p>
+  {% endfor %}
+</body>
+</html>

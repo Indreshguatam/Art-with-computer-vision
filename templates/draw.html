@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="{{ url_for('static', filename='js/sketch.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>Draw</title>
+</head>
+<body>
+  <div class="top-bar">
+    <form action="{{ url_for('save_drawing') }}" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" required>
+      <button type="submit">Save Drawing</button>
+    </form>
+    <a href="{{ url_for('dashboard') }}" class="btn">Exit</a>
+  </div>
+  <div id="canvas-container"></div>
+</body>
+</html>

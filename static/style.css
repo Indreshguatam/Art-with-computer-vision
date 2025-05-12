@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #4285f4;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  background-color: #db4437;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #c1351d;
+}
+
+main {
+  padding: 2rem;
+  min-height: 80vh;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Flash Messages */
+.flash-messages {
+  margin-bottom: 1rem;
+}
+
+.flash {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.flash.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.flash.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.flash.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+/* Auth Forms */
+.auth-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #3367d6;
+}
+
+/* Desktop */
+.desktop {
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.option-btn {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 200px;
+}
+
+.option-btn:hover {
+  transform: translateY(-5px);
+}
+
+.option-btn .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.option-btn .label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Drawings */
+.drawings-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.drawings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.drawing-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.drawing-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+.drawing-info {
+  padding: 1rem;
+}
+
+.date {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+/* Drawing App */
+.drawing-app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.instructions h3 {
+  margin-top: 0;
+}
+
+#drawingApp {
+  margin-top: 2rem;
+}
+.drawing-app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.video-feed {
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.instructions {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.instructions ul {
+  padding-left: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #4285f4;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3367d6;
+}
