@@ -10,7 +10,7 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'  # Disables the message
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'   # Suppresses other TensorFlow info
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'
+app.secret_key = '665ed14e91727260248d886e48a61517'
 app.config['UPLOAD_FOLDER'] = 'static/drawings'
 
 # Database setup
